@@ -1,0 +1,25 @@
+{
+  "name": "school-login-system",
+  "version": "1.0.0",
+  "description": "This is a simple login system made for a school project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyperscale1/School-Login-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hyperscale1/School-Login-System/issues"
+  },
+  "homepage": "https://github.com/Hyperscale1/School-Login-System#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  }
+}

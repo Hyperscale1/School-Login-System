@@ -1,0 +1,60 @@
+<head>
+    <title><%=  `${title}` %> | Software Engineer and Web Developer </title>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+		<meta name="description" content="Meet Luca Pribilovic, a talented software engineer at Weblutions who is proficient in a range of web development skills. Luca primarily focuses on using the Node.js framework with Express to create high-quality web applications that meet the needs of clients.
+
+        As a software engineer, I am dedicated to staying up-to-date with the latest industry trends and technologies. I pride myself on my ability to develop scalable and robust web applications that can handle a range of requirements.
+        
+        In addition to my expertise with Node.js, I am also highly proficient in JavaScript, HTML, and CSS, which allows me to create beautiful, responsive, and intuitive user interfaces.
+        
+        Overall, I am a passionate and driven software engineer with a broad skill set and a strong commitment to delivering exceptional results."/>
+		<meta property="og:title" content="Luca Pribilovic: Software Engineer and Web Developer" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Meet Luca Pribilovic, a talented software engineer at Weblutions who is proficient in a range of web development skills. Luca primarily focuses on using the Node.js framework with Express to create high-quality web applications that meet the needs of clients.
+
+        As a software engineer, I am dedicated to staying up-to-date with the latest industry trends and technologies. I pride myself on my ability to develop scalable and robust web applications that can handle a range of requirements.
+        
+        In addition to my expertise with Node.js, I am also highly proficient in JavaScript, HTML, and CSS, which allows me to create beautiful, responsive, and intuitive user interfaces.
+        
+        Overall, I am a passionate and driven software engineer with a broad skill set and a strong commitment to delivering exceptional results."/>
+	    <meta name="theme-color" content="#0871C7">
+        <link rel="icon" type="image/png" href="/images/branding/logor.png">
+    <link rel="stylesheet" href="<% req.get('host') %>/assets/main.css">
+    <script src="https://kit.fontawesome.com/b9208ae438.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+
+<script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+<body>
+    <div class="navbar" >
+        <div class="img01" style="flex: 25%;">
+            <img src="/images/branding/logo.png" alt="Go Home" onclick="window.location='/';">
+        </div>
+        <div class="navbar-center" style="flex: 50%;">
+        </div>
+        <div class="navbar-right" style="flex: 25%;">
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" style="font-size: 2em;" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+            </div>
+        </div>
+        <a class="openNav" onclick="openNav()" style="cursor: pointer;">&#9776;</a>
+        </div>
+    </div>
+</body>
