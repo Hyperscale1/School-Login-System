@@ -1,6 +1,5 @@
 {
-    "siteInformation": {
-        "processPort": 3000,
-        "domain": "http://localhost:3000"
+    "applicationInfo": {
+        "name": "Test App"
     }
 }

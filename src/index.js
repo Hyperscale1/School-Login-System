@@ -1,14 +1,11 @@
-const config = require('../config.json');const express = require('express');const app = express();const fs = require("fs");const path = require('path');const ejs = require('ejs');
+const config = require('../config');
+const nodegui = require('@nodegui/nodegui');
+console.log(`\x1b[31mStarted Application...\x1b[0m`);
 
+// Path: src/index.js
+// Compare this snippet from index.js:
+const win = new nodegui.QMainWindow();
+win.setWindowTitle('Hello World');
+win.resize(400, 200);
+win.show();
 
-app.use(express.static('public'));
-app.set('views', path.join(__dirname, '/views'));
-app.set('views', path.join(__dirname, '/views'));
-app.set('view engine', 'ejs');
-app.listen(config["siteInformation"].processPort, async function () {
-    console.log(`\x1b[32mStarted Portfolio...\x1b[0m`);
-});
-// Pages
-app.get('/', function(req,res) {
-        res.render('index', {req: req});
-})
