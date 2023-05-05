@@ -18,5 +18,8 @@
 	"homepage": "https://github.com/Hyperscale1/School-Login-System#readme",
 	"devDependencies": {
 		"electron": "^24.2.0"
+	},
+	"dependencies": {
+		"figlet": "^1.6.0"
 	}
 }

@@ -2,8 +2,6 @@ const { app, BrowserWindow, Menu } = require('electron')
 const path = require('path')
 const config = require('../config.json')
 
-console.log('Electron.js App has started successfully...')
-
 const createWindow = () => {
     const mainWindow = new BrowserWindow({
         width: 800,
@@ -13,8 +11,8 @@ const createWindow = () => {
             nodeIntegrationInWorker: true
         },
     })
-    mainWindow.loadURL(config.domain)
-    // mainWindow.loadFile('./src/pages/index.html')
+    // mainWindow.loadURL(config.domain)
+    mainWindow.loadFile('./src/pages/index.html')
 }
 
 const dockMenu = Menu.buildFromTemplate([
