@@ -1,0 +1,341 @@
+:root {
+    --primary: #2F88B4;
+    --secondary: #101e25;
+    --bg: #131416;
+    --success: #2ED573;
+    --warning: #FFD75E;
+    --danger: #FF4757;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+hr {
+    border: none;
+    border-top: 2px solid;
+    color: #fff;
+    height: 1px;
+    width: 50%;
+}
+
+* {
+    font-family: 'Exo 2', sans-serif;
+    scroll-behavior: smooth;
+    color: #ffffff;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 0.313rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #181818b6;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(83, 80, 80);
+	transition: 0.3s;
+    border-radius: 0.5rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}
+
+code {
+	font-family: Consolas, "courier new";
+	color: white;
+	background-color: #292424;
+	border-radius: 0.3em;
+	padding: 0.25rem;
+	font-size: 105%;
+}
+/* Start Background Animation */
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background-color: var(--bg);
+    /* animation: gradient 10s ease infinite; */
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+.navbar {
+    overflow: hidden;
+    position: sticky;;
+    position: -webkit-sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    /* background-color: #101e25; */
+}
+/* Style the navigation bar links */
+.navbar .navbar-center {
+    animation: fadeIn 5s;
+    text-align: center;
+    padding: 1.5rem 1.25rem;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+.navbar i {
+	color: #ffffff;
+}
+.navbar .navbar-center a {
+	color: #ffffff;
+}
+.navbar .navbar-right {
+    animation: fadeIn 5s;
+    text-align: right;
+    padding: 1.25rem 1.25rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.navbar .navbar-right .buttons01 {
+	color: #ffffffe3;
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+	border-radius: 0.5rem;
+    text-decoration: none;
+    /* font-size: 1.25rem; */
+    transition: 0.5s;
+    background-color: #101e255b;
+
+}
+.navbar .navbar-right .buttons01:hover {
+	color: #ffffffe3;
+    text-align: center;
+    padding: 0.938rem 1.25rem;
+	border-radius: 0.5rem;
+    text-decoration: none;
+    /* font-size: 1.25rem; */
+    transition: 0.5s;
+    background-color: #101e25c9;
+}
+.navbar .img01 img{
+    cursor: pointer; 
+    height: 4rem; 
+    width: auto;
+    margin-top:0.3rem;
+    margin-bottom: 0.2rem;
+    margin-left: 1rem;
+    border-radius: 250px;
+}
+
+@media only screen and (max-width: 1437px) {
+    .navbar .navbar-right .buttons01 {
+        display: none;
+    }
+    .parent01 .container02 {
+        display: none;
+    }
+    .navbar .navbar-right .openNav {
+        display: inline-block;
+    }
+}
+/* Nav Overlay Thing */
+.overlay { 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: rgb(16,30,37);
+    background: linear-gradient(315deg, #2b274d 40%, #234a5e 90%);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 2.0em;
+    color: #cacaca;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 5em;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+/* End Navigation */
+
+/* Start Index Page */
+.parent01 {
+    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.parent01 .container01 {
+    margin-top: -4rem !important;
+    height: 40rem;
+	min-width: 40%;
+	padding: 1rem;
+	margin: 1rem;
+	min-height: 5rem;
+	border-radius: 6px;
+    transition: .3s;
+    /* border: white solid 2px; */
+}
+
+.parent01 .container01 .buttons02 {
+    font-size: 2em;
+    border-radius: 50px;
+    padding: 0.5rem;
+}
+
+.parent01 .container01 img{
+    margin-left: 7rem;
+    margin-top: -1rem;
+    height: 570px;
+}
+
+.parent01 .container01 .text01 {
+    color: #eee8e8;
+    font-size: 4em;
+}
+
+.parent01 .container01 .text02 {
+    color: #eee8e8;
+    font-size: 4em;
+    margin-top: -4rem;
+}
+
+.parent01 .container01 .text03 {
+    color: #eee8e8;
+    font-size: 2em;
+    margin-top: -3rem;
+}
+
+.parent01 .container01 .button01 {
+    background-color: var(--primary);
+    font-size: 1.2em;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.parent01 .container02 {
+    margin-top: -4rem !important;
+    height: 38rem;
+	min-width: 40%;
+	padding: 1rem;
+	margin: 1rem;
+	min-height: 5rem;
+	border-radius: 6px;
+    transition: .3s;
+    /* border: white solid 2px; */
+}
+
+.parent01 .container02 img{
+    margin-left: 7rem;
+    margin-top: -1rem;
+    height: 570px;
+}
+
+.aboutme {
+    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.aboutme .container03 {
+    margin-top: -4rem !important;
+    height: 38rem;
+	min-width: 40%;
+	padding: 1rem;
+	margin: 1rem;
+	min-height: 5rem;
+	border-radius: 6px;
+    transition: .3s;
+    /* border: white solid 2px; */
+}
+
+.aboutme .text04 {
+    font-size: 5em;
+    text-align: center;
+}
+
+.aboutme .text05 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.knowledge {
+    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.knowledge .container04 {
+    margin-top: -4rem !important;
+    height: 14rem;
+	min-width: 40%;
+	padding: 1rem;
+	margin: 1rem;
+	min-height: 5rem;
+	border-radius: 6px;
+    transition: .3s;
+    /* border: white solid 2px; */
+}
+
+.knowledge .text06 {
+    font-size: 5em;
+    text-align: center;
+}
+
+.knowledge .container05 {
+    margin-top: -4rem !important;
+    height: 38rem;
+	width: 80%;
+    min-width: 40%;
+	padding: 1rem;
+	margin: 1rem;
+	min-height: 5rem;
+	border-radius: 6px;
+    transition: .3s;
+    background-color: #191b1e;
+    /* border: white solid 2px; */
+}
+
+.knowledge .container05 .text07 {
+    text-align: center;
+    font-size: 1.3em;
+}

@@ -1,3 +1,6 @@
 {
-    "domain": "https://weblutions.com"
+    "siteInformation": {
+        "processPort": 3000,
+        "domain": "http://localhost:3000"
+    }
 }
