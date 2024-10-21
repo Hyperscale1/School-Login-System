@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Hyperscale1/Work-Portfolio#readme",
   "dependencies": {
-    "ejs": "^3.1.8",
+    "ejs": "^3.1.10",
     "express": "^4.21.0",
     "path": "^0.12.7"
   }
